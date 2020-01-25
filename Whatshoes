@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>W06 Coding Assignment - Program #1</title>
+
+<script>
+function calculate() {
+let weather = document.getElementById('weathertype').value;
+let footw;
+if (weather == "hot") {
+footw = "sandals";
+} else if (weather == "rain") {
+footw = "galoshes";
+} else if (weather == "snow") {
+footw = "boots";
+} else {
+footw = "shoes";
+}
+document.getElementById("outputDiv").innerHTML = footw;
+}
+</script>
+</head>
+<body>
+<h2>Program #01</h2>
+Weather <input type="text" id="weathertype" size="3" maxlength="5">
+<button type="button" onclick="calculate()">Submit</button><br>
+Foot Wear:
+<div id="outputDiv"></div>
+</body>
+</html>
